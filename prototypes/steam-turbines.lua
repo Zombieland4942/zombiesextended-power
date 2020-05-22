@@ -14,7 +14,7 @@ for x, steam_turbine in pairs(steam_turbines) do
 
     item.name = steam_turbine.name
     item.place_result = steam_turbine.name
-    item.subgroup = "ds-reactors"
+    item.subgroup = "ds-steam-turbines"
     item.order = steam_turbine.order
 
     data:extend({ turbine, item })

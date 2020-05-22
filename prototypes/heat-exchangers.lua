@@ -15,7 +15,7 @@ for x, heat_exchanger in pairs(heat_exchangers) do
     
     item.name = heat_exchanger.name
     item.place_result = heat_exchanger.name
-    item.subgroup = "ds-reactors"
+    item.subgroup = "ds-heat-exchangers"
     item.order = heat_exchanger.order
 
     data:extend({ exchanger, item })
