@@ -1,3 +1,4 @@
+data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 4000
 
 local reator_base = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
 local item_base = util.table.deepcopy(data.raw["item"]["nuclear-reactor"])
@@ -8,6 +9,7 @@ for x, adv_reactor in pairs(adv_reactors) do
     item = util.table.deepcopy(item_base)
 
     reactor.name = adv_reactor.name
+    reactor.minable.result = adv_reactor.name
     reactor.max_health = adv_reactor.health
     reactor.consumption = adv_reactor.production_mw .. "MW"
     reactor.heat_buffer.max_temperature = adv_reactor.max_temp

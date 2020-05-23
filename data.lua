@@ -8,3 +8,8 @@ require("prototypes.accumulators")
 require("prototypes.solar-panels")
 require("prototypes.geothermal-generator")
 require("prototypes.rtg-generators")
+
+
+require("prototypes.medium-power-poles")
+require("prototypes.large-power-poles")
+require("prototypes.substations")

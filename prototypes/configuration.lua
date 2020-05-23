@@ -7,7 +7,6 @@ accumulators = {
     { order = "e", name = "accumulator-mk5", health = 250, buffer_mj = 160, flow_in_kw = 9600, flow_out_kw = 9600 },
 }
 
-
 solar_panels = {
     { order = "f", name = "solar-panel-mk1", health = 200, production_kw = 120 },
     { order = "g", name = "solar-panel-mk2", health = 250, production_kw = 240 },
@@ -31,7 +30,6 @@ rtg_generators = {
     { order = "d", name = "rtg-mk4", health = 200, production_kw = 240 },
 }
 
-
 adv_reactors = {
     { order = "a", name = "adv-reactor-mk1", health = 750, production_mw = 80, max_temp = 2000, specific_heat_mj = 20 },
     { order = "b", name = "adv-reactor-mk2", health = 1000, production_mw = 160, max_temp = 4000, specific_heat_mj = 40 },
@@ -54,4 +52,19 @@ adv_fuel_cells = {
     { order = "j", name = "adv-fuel-cell-mk1", fuel_value = "16GJ" },
     { order = "k", name = "adv-fuel-cell-mk2", fuel_value = "32GJ" },
     { order = "l", name = "adv-fuel-cell-mk3", fuel_value = "64GJ" },
+}
+
+medium_power_poles = {
+    { order = "a", name = "medium-power-pole-mk1", health = 100, wire_reach = 18, area = 7 },
+    { order = "b", name = "medium-power-pole-mk2", health = 150, wire_reach = 36, area = 14 },
+}
+
+large_power_poles = {
+    { order = "c", name = "large-power-pole-mk1", health = 150, wire_reach = 45, area = 2 },
+    { order = "d", name = "large-power-pole-mk2", health = 200, wire_reach = 64, area = 2 },
+}
+
+substations = {
+    { order = "e", name = "substation-mk1", health = 250, wire_reach = 34, area = 17 },
+    { order = "f", name = "substation-mk2", health = 350, wire_reach = 64, area = 32 },
 }

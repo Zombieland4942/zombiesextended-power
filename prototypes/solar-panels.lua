@@ -8,10 +8,16 @@ for x, solar_panel in pairs(solar_panels) do
     item = util.table.deepcopy(item_base)
 
     solar.name = solar_panel.name
+    solar.icon = "__darkstar-power__/graphics/icons/" .. solar_panel.name .. ".png"
+    solar.minable.result = solar_panel.name
     solar.max_health = solar_panel.health
     solar.production  = solar_panel.production_kw .. "kW"
 
+    solar.picture.layers[1].filename = "__darkstar-power__/graphics/entity/" .. solar_panel.name .. "/solar-panel.png"
+    solar.picture.layers[1].hr_version.filename = "__darkstar-power__/graphics/entity/" .. solar_panel.name .. "/hr-solar-panel.png"
+
     item.name = solar_panel.name
+    item.icon = "__darkstar-power__/graphics/icons/" .. solar_panel.name .. ".png"
     item.place_result = solar_panel.name
     item.subgroup = "ds-solar"
     item.order = solar_panel.order

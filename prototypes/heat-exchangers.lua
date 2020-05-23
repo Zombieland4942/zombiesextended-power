@@ -8,6 +8,7 @@ for x, heat_exchanger in pairs(heat_exchangers) do
     item = util.table.deepcopy(item_base)
 
     exchanger.name = heat_exchanger.name
+    exchanger.minable.result = heat_exchanger.name
     exchanger.max_health = heat_exchanger.health
     exchanger.target_temperature = heat_exchanger.target_temp
     exchanger.energy_consumption = heat_exchanger.energy_con_mw .. "MW"
