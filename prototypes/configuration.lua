@@ -19,15 +19,16 @@ rtg_generators = {
     { order = "a", name = "rtg-mk1", health = 100, production_kw = 30 },
     { order = "b", name = "rtg-mk2", health = 150, production_kw = 60 },
     { order = "c", name = "rtg-mk3", health = 200, production_kw = 120 },
-    { order = "d", name = "rtg-mk4", health = 200, production_kw = 240 },
+    { order = "d", name = "rtg-mk4", health = 250, production_kw = 240 },
+    { order = "e", name = "rtg-mk5", health = 300, production_kw = 480 },
 }
 
 geothermal_generators = {
-    { order = "e", name = "geothermal-mk1", health = 200, production_kw = 1000 },
-    { order = "f", name = "geothermal-mk2", health = 200, production_kw = 2000 },
-    { order = "g", name = "geothermal-mk3", health = 250, production_kw = 4000 },
-    { order = "h", name = "geothermal-mk4", health = 250, production_kw = 8000 },
-    { order = "i", name = "geothermal-mk5", health = 300, production_kw = 16000 },
+    { order = "f", name = "geothermal-mk1", health = 200, production_kw = 1000 },
+    { order = "g", name = "geothermal-mk2", health = 200, production_kw = 2000 },
+    { order = "h", name = "geothermal-mk3", health = 250, production_kw = 4000 },
+    { order = "i", name = "geothermal-mk4", health = 250, production_kw = 8000 },
+    { order = "j", name = "geothermal-mk5", health = 300, production_kw = 16000 },
 }
 
 adv_reactors = {
