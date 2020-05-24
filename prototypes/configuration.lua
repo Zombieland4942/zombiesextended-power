@@ -1,26 +1,18 @@
 
-accumulators = {
-    { order = "a", name = "accumulator-mk1", health = 150, buffer_mj = 10, flow_in_kw = 600, flow_out_kw = 600 },
-    { order = "b", name = "accumulator-mk2", health = 200, buffer_mj = 20, flow_in_kw = 1200, flow_out_kw = 1200 },
-    { order = "c", name = "accumulator-mk3", health = 200, buffer_mj = 40, flow_in_kw = 2400, flow_out_kw = 2400 },
-    { order = "d", name = "accumulator-mk4", health = 250, buffer_mj = 80, flow_in_kw = 4800, flow_out_kw = 4800 },
-    { order = "e", name = "accumulator-mk5", health = 250, buffer_mj = 160, flow_in_kw = 9600, flow_out_kw = 9600 },
-}
-
 solar_panels = {
-    { order = "f", name = "solar-panel-mk1", health = 200, production_kw = 120 },
-    { order = "g", name = "solar-panel-mk2", health = 250, production_kw = 240 },
-    { order = "h", name = "solar-panel-mk3", health = 250, production_kw = 480 },
-    { order = "i", name = "solar-panel-mk4", health = 300, production_kw = 960 },
-    { order = "j", name = "solar-panel-mk5", health = 300, production_kw = 1920 },
+    { order = "a", name = "solar-panel-mk1", health = 200, production_kw = 120 },
+    { order = "b", name = "solar-panel-mk2", health = 250, production_kw = 240 },
+    { order = "c", name = "solar-panel-mk3", health = 250, production_kw = 480 },
+    { order = "d", name = "solar-panel-mk4", health = 300, production_kw = 960 },
+    { order = "e", name = "solar-panel-mk5", health = 300, production_kw = 1920 },
 }
 
-geothermal_generators = {
-    { order = "a", name = "geothermal-mk1", health = 200, production_kw = 1000 },
-    { order = "b", name = "geothermal-mk2", health = 200, production_kw = 2000 },
-    { order = "c", name = "geothermal-mk3", health = 250, production_kw = 4000 },
-    { order = "d", name = "geothermal-mk4", health = 250, production_kw = 8000 },
-    { order = "e", name = "geothermal-mk5", health = 300, production_kw = 16000 },
+accumulators = {
+    { order = "f", name = "accumulator-mk1", health = 150, buffer_mj = 10, flow_in_kw = 600, flow_out_kw = 600 },
+    { order = "g", name = "accumulator-mk2", health = 200, buffer_mj = 20, flow_in_kw = 1200, flow_out_kw = 1200 },
+    { order = "h", name = "accumulator-mk3", health = 200, buffer_mj = 40, flow_in_kw = 2400, flow_out_kw = 2400 },
+    { order = "i", name = "accumulator-mk4", health = 250, buffer_mj = 80, flow_in_kw = 4800, flow_out_kw = 4800 },
+    { order = "j", name = "accumulator-mk5", health = 250, buffer_mj = 160, flow_in_kw = 9600, flow_out_kw = 9600 },
 }
 
 rtg_generators = {
@@ -28,6 +20,14 @@ rtg_generators = {
     { order = "b", name = "rtg-mk2", health = 150, production_kw = 60 },
     { order = "c", name = "rtg-mk3", health = 200, production_kw = 120 },
     { order = "d", name = "rtg-mk4", health = 200, production_kw = 240 },
+}
+
+geothermal_generators = {
+    { order = "e", name = "geothermal-mk1", health = 200, production_kw = 1000 },
+    { order = "f", name = "geothermal-mk2", health = 200, production_kw = 2000 },
+    { order = "g", name = "geothermal-mk3", health = 250, production_kw = 4000 },
+    { order = "h", name = "geothermal-mk4", health = 250, production_kw = 8000 },
+    { order = "i", name = "geothermal-mk5", health = 300, production_kw = 16000 },
 }
 
 adv_reactors = {

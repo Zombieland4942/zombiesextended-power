@@ -25,7 +25,7 @@ for x, geothermal_gennie in pairs(geothermal_generators) do
 
     item.name = geothermal_gennie.name
     item.place_result = geothermal_gennie.name
-    item.subgroup = "ds-geothermal"
+    item.subgroup = "ds-early-power"
     item.order = geothermal_gennie.order
 
     data:extend({ geothermal, item })

@@ -21,7 +21,7 @@ for x, accumulator in pairs(accumulators) do
     item.name = accumulator.name
     item.icon = "__darkstar-power__/graphics/icons/" .. accumulator.name .. ".png"
     item.place_result = accumulator.name
-    item.subgroup = "ds-accumulator"
+    item.subgroup = "ds-solar"
     item.order = accumulator.order
 
     data:extend({ accumul, item })

@@ -25,7 +25,7 @@ for x, rtg_gennie in pairs(rtg_generators) do
 
     item.name = rtg_gennie.name
     item.place_result = rtg_gennie.name
-    item.subgroup = "ds-rtg"
+    item.subgroup = "ds-early-power"
     item.order = rtg_gennie.order
 
     data:extend({ rtg, item })
