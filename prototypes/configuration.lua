@@ -55,14 +55,14 @@ adv_fuel_cells = {
     { order = "l", name = "adv-fuel-cell-mk3", fuel_value = "64GJ" },
 }
 
-medium_power_poles = {
-    { order = "a", name = "medium-power-pole-mk1", health = 100, wire_reach = 18, area = 7 },
-    { order = "b", name = "medium-power-pole-mk2", health = 150, wire_reach = 36, area = 14 },
-}
-
 large_power_poles = {
     { order = "c", name = "large-power-pole-mk1", health = 150, wire_reach = 45, area = 2 },
     { order = "d", name = "large-power-pole-mk2", health = 200, wire_reach = 64, area = 2 },
+}
+
+medium_power_poles = {
+    { order = "a", name = "medium-power-pole-mk1", health = 100, wire_reach = 18, area = 7 },
+    { order = "b", name = "medium-power-pole-mk2", health = 150, wire_reach = 36, area = 14 },
 }
 
 substations = {
