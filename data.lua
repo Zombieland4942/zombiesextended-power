@@ -6,8 +6,8 @@ require("prototypes.steam-turbines")
 require("prototypes.adv-fuel-cells")
 require("prototypes.accumulators")
 require("prototypes.solar-panels")
-require("prototypes.geothermal-generator")
-require("prototypes.rtg-generators")
+--require("prototypes.geothermal-generator")
+--require("prototypes.rtg-generators")
 
 
 require("prototypes.medium-power-poles")
