@@ -23,5 +23,15 @@ for x, large_power_pole in pairs(large_power_poles) do
     item.place_result = large_power_pole.name
     item.subgroup = "ds-power-dist"
 
-    data:extend({ electric_pole, item })
+    table.insert(data.raw["technology"][large_power_pole.technology].effects, { type = "unlock-recipe", recipe = large_power_pole.name })
+
+    data:extend({ electric_pole, item,
+        {
+            type = "recipe",
+            name = large_power_pole.name,
+            enabled = false,
+            ingredients = large_power_pole.ingredients,
+            result = large_power_pole.name
+        }
+    })
 end

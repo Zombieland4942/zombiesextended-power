@@ -30,6 +30,16 @@ for x, heat_exchanger in pairs(heat_exchangers) do
     item.place_result = heat_exchanger.name
     item.subgroup = "ds-reactors"
     item.order = heat_exchanger.order
+    
+    table.insert(data.raw["technology"][heat_exchanger.technology].effects, { type = "unlock-recipe", recipe = heat_exchanger.name })
 
-    data:extend({ exchanger, item })
+    data:extend({ exchanger, item,
+        {
+            type = "recipe",
+            name = heat_exchanger.name,
+            enabled = false,
+            ingredients = heat_exchanger.ingredients,
+            result = heat_exchanger.name
+        }
+    })
 end

@@ -1,4 +1,5 @@
 require("configuration")
+require("prototypes.technologies")
 
 require("prototypes.adv-reactors")
 require("prototypes.heat-exchangers")
@@ -8,7 +9,6 @@ require("prototypes.accumulators")
 require("prototypes.solar-panels")
 --require("prototypes.geothermal-generator")
 --require("prototypes.rtg-generators")
-
 
 require("prototypes.medium-power-poles")
 require("prototypes.large-power-poles")

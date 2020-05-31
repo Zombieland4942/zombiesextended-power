@@ -21,6 +21,16 @@ for x, solar_panel in pairs(solar_panels) do
     item.place_result = solar_panel.name
     item.subgroup = "ds-solar"
     item.order = solar_panel.order
+    
+    table.insert(data.raw["technology"][solar_panel.technology].effects, { type = "unlock-recipe", recipe = solar_panel.name })
 
-    data:extend({ solar, item })
+    data:extend({ solar, item,
+    {
+        type = "recipe",
+        name = solar_panel.name,
+        enabled = false,
+        ingredients = solar_panel.ingredients,
+        result = solar_panel.name
+    }
+    })
 end

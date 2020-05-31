@@ -23,5 +23,15 @@ for x, substation in pairs(substations) do
     item.place_result = substation.name
     item.subgroup = "ds-power-dist"
 
-    data:extend({ sub, item })
+    table.insert(data.raw["technology"][substation.technology].effects, { type = "unlock-recipe", recipe = substation.name })
+
+    data:extend({ sub, item,
+        {
+            type = "recipe",
+            name = substation.name,
+            enabled = false,
+            ingredients = substation.ingredients,
+            result = substation.name
+        }
+    })
 end

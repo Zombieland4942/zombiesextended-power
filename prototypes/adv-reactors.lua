@@ -23,6 +23,16 @@ for x, adv_reactor in pairs(adv_reactors) do
     item.place_result = adv_reactor.name
     item.subgroup = "ds-reactors"
     item.order = adv_reactor.order
+    
+    table.insert(data.raw["technology"][adv_reactor.technology].effects, { type = "unlock-recipe", recipe = adv_reactor.name })
 
-    data:extend({ reactor, item })
+    data:extend({ reactor, item,
+        {
+            type = "recipe",
+            name = adv_reactor.name,
+            enabled = false,
+            ingredients = adv_reactor.ingredients,
+            result = adv_reactor.name
+        }
+    })
 end

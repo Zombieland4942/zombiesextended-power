@@ -23,6 +23,16 @@ for x, accumulator in pairs(accumulators) do
     item.place_result = accumulator.name
     item.subgroup = "ds-solar"
     item.order = accumulator.order
+    
+    table.insert(data.raw["technology"][accumulator.technology].effects, { type = "unlock-recipe", recipe = accumulator.name })
 
-    data:extend({ accumul, item })
+    data:extend({ accumul, item,
+    {
+        type = "recipe",
+        name = accumulator.name,
+        enabled = false,
+        ingredients = accumulator.ingredients,
+        result = accumulator.name
+    }
+    })
 end

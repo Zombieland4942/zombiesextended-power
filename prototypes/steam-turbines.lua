@@ -25,6 +25,16 @@ for x, steam_turbine in pairs(steam_turbines) do
     item.place_result = steam_turbine.name
     item.subgroup = "ds-reactors"
     item.order = steam_turbine.order
+    
+    table.insert(data.raw["technology"][steam_turbine.technology].effects, { type = "unlock-recipe", recipe = steam_turbine.name })
 
-    data:extend({ turbine, item })
+    data:extend({ turbine, item,
+        {
+            type = "recipe",
+            name = steam_turbine.name,
+            enabled = false,
+            ingredients = steam_turbine.ingredients,
+            result = steam_turbine.name
+        }
+    })
 end
