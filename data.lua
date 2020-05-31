@@ -1,4 +1,4 @@
-require("prototypes.configuration")
+require("configuration")
 
 require("prototypes.adv-reactors")
 require("prototypes.heat-exchangers")
