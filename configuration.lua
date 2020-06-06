@@ -17,12 +17,12 @@ technologies = {
 
     { order = "a-b-g", name = "heavy-water-processing", count = 800, time = 60, prerequisite = {"nuclear-power"}, ingredients = science_t3 },
 
-    { order = "a-b-h", name = "nuclear-mk1", count = 900, time = 60, prerequisite = {"nuclear-power"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1},{"production-science-pack",1}} },
-    { order = "a-b-i", name = "nuclear-mk2", count = 1000, time = 60, prerequisite = {"nuclear-mk1"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1},{"production-science-pack",1},{"utility-science-pack",1}} },
-    { order = "a-b-j", name = "nuclear-mk3", count = 1100, time = 60, prerequisite = {"nuclear-mk2"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1},{"production-science-pack",1},{"utility-science-pack",1},{"space-science-pack",1}} },
+    { order = "a-b-h", name = "nuclear-mk1", count = 900, time = 60, prerequisite = {"nuclear-power"}, ingredients = science_t4 },
+    { order = "a-b-i", name = "nuclear-mk2", count = 1000, time = 60, prerequisite = {"nuclear-mk1"}, ingredients = science_t5 },
+    { order = "a-b-j", name = "nuclear-mk3", count = 1100, time = 60, prerequisite = {"nuclear-mk2"}, ingredients = science_t6 },
 
-    { order = "a-b-k", name = "electric-energy-distribution-3", count = 200, time = 60, prerequisite = {"electric-energy-distribution-2"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1}} },
-    { order = "a-b-l", name = "electric-energy-distribution-4", count = 300, time = 60, prerequisite = {"electric-energy-distribution-3"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1},{"production-science-pack",1}} },
+    { order = "a-b-k", name = "electric-energy-distribution-3", count = 200, time = 60, prerequisite = {"electric-energy-distribution-2"}, ingredients = science_t3 },
+    { order = "a-b-l", name = "electric-energy-distribution-4", count = 300, time = 60, prerequisite = {"electric-energy-distribution-3"}, ingredients = science_t4 },
 
     { order = "a-b-g", name = "adv-nuclear-fuel-reprocessing", count = 800, time = 60, prerequisite = {"nuclear-fuel-reprocessing"}, ingredients = science_t4 },
 }
