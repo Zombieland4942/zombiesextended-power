@@ -15,12 +15,16 @@ technologies = {
     { order = "a-b-f", name = "solar-mk4", count = 700, time = 60, prerequisite = {"solar-mk3"}, ingredients = science_t6 },
     { order = "a-b-g", name = "solar-mk5", count = 800, time = 60, prerequisite = {"solar-mk4"}, ingredients = science_t6 },
 
+    { order = "a-b-g", name = "heavy-water-processing", count = 800, time = 60, prerequisite = {"nuclear-power"}, ingredients = science_t3 },
+
     { order = "a-b-h", name = "nuclear-mk1", count = 900, time = 60, prerequisite = {"nuclear-power"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1},{"production-science-pack",1}} },
     { order = "a-b-i", name = "nuclear-mk2", count = 1000, time = 60, prerequisite = {"nuclear-mk1"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1},{"production-science-pack",1},{"utility-science-pack",1}} },
     { order = "a-b-j", name = "nuclear-mk3", count = 1100, time = 60, prerequisite = {"nuclear-mk2"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1},{"production-science-pack",1},{"utility-science-pack",1},{"space-science-pack",1}} },
 
     { order = "a-b-k", name = "electric-energy-distribution-3", count = 200, time = 60, prerequisite = {"electric-energy-distribution-2"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1}} },
     { order = "a-b-l", name = "electric-energy-distribution-4", count = 300, time = 60, prerequisite = {"electric-energy-distribution-3"}, ingredients = {{"automation-science-pack",1},{"logistic-science-pack",1},{"chemical-science-pack",1},{"production-science-pack",1}} },
+
+    { order = "a-b-g", name = "adv-nuclear-fuel-reprocessing", count = 800, time = 60, prerequisite = {"nuclear-fuel-reprocessing"}, ingredients = science_t4 },
 }
 
 
@@ -71,15 +75,15 @@ heat_exchangers = {
 }
 
 steam_turbines = {
-    { order = "g", name = "steam-turbine-mk1", health = 350, max_temp = 500, fluid_per_tick = 2, ingredients = { {"steam-turbine", 3},{"complex-processing-unit", 2} }, technology = "nuclear-mk1" },
-    { order = "h", name = "steam-turbine-mk2", health = 400, max_temp = 500, fluid_per_tick = 4, ingredients = { {"steam-turbine-mk1", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk2" },
-    { order = "i", name = "steam-turbine-mk3", health = 450, max_temp = 500, fluid_per_tick = 8, ingredients = { {"steam-turbine-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3" }
+    { order = "g", name = "steam-turbine-mk1", health = 350, max_temp = 500, fluid_per_tick = 0.5, ingredients = { {"steam-turbine", 3},{"complex-processing-unit", 2} }, technology = "nuclear-mk1" },
+    { order = "h", name = "steam-turbine-mk2", health = 400, max_temp = 500, fluid_per_tick = 1, ingredients = { {"steam-turbine-mk1", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk2" },
+    { order = "i", name = "steam-turbine-mk3", health = 450, max_temp = 500, fluid_per_tick = 2, ingredients = { {"steam-turbine-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3" }
 }
 
 adv_fuel_cells = {
-    { order = "j", name = "adv-fuel-cell-mk1", fuel_value = "16GJ" },
-    { order = "k", name = "adv-fuel-cell-mk2", fuel_value = "32GJ" },
-    { order = "l", name = "adv-fuel-cell-mk3", fuel_value = "64GJ" },
+    { order = "j", name = "adv-fuel-cell-mk1", fuel_value = "16GJ", recyle_result = {{"uranium-238", 6}}, ingredients = { {"uranium-fuel-cell", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk1" },
+    { order = "k", name = "adv-fuel-cell-mk2", fuel_value = "32GJ", recyle_result = {{"uranium-238", 12},{"uranium-235", 3}}, ingredients = { {"adv-fuel-cell-mk1", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk2" },
+    { order = "l", name = "adv-fuel-cell-mk3", fuel_value = "64GJ", recyle_result = {{"uranium-238", 24},{"uranium-235", 6}}, ingredients = { {"adv-fuel-cell-mk2", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk3" },
 }
 
 large_power_poles = {
@@ -95,4 +99,9 @@ medium_power_poles = {
 substations = {
     { order = "e", name = "substation-mk1", health = 250, wire_reach = 34, area = 18, ingredients = { {"substation", 2},{"gold-plate", 1} }, technology = "electric-energy-distribution-3" },
     { order = "f", name = "substation-mk2", health = 250, wire_reach = 64, area = 32, ingredients = { {"substation-mk1", 2},{"vibranium-plate", 2} }, technology = "electric-energy-distribution-4" },
+}
+
+fluids = {
+    { order = "g", name = "heavy-water", default_temperature = 15, max_temperature = 100, heat_capacity = "0.8KJ", base_color = {r=0, g=0.04, b=0.6}, flow_color = {r=0.7, g=0.7, b=0.7}, ingredients = { {type="fluid", name="water", amount=10} }, technology = "heavy-water-processing" },
+    { order = "h", name = "heavy-steam", default_temperature = 15, max_temperature = 1000, heat_capacity = "0.8KJ", base_color = {r=0.20, g=0.20, b=0.20}, flow_color = {r=0.5, g=0.5, b=0.5} },
 }
