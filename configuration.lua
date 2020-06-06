@@ -80,6 +80,10 @@ steam_turbines = {
     { order = "i", name = "steam-turbine-mk3", health = 450, max_temp = 500, fluid_per_tick = 2, ingredients = { {"steam-turbine-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3" }
 }
 
+heat_pipes = {
+    { order = "j", name = "heat-pipe-mk1", health = 350, max_temp = 4000, ingredients = { {"vibranium-plate", 1} }, technology = "nuclear-mk1" },
+}
+
 adv_fuel_cells = {
     { order = "j", name = "adv-fuel-cell-mk1", fuel_value = "16GJ", recyle_result = {{"uranium-238", 6}}, ingredients = { {"uranium-fuel-cell", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk1" },
     { order = "k", name = "adv-fuel-cell-mk2", fuel_value = "32GJ", recyle_result = {{"uranium-238", 12},{"uranium-235", 3}}, ingredients = { {"adv-fuel-cell-mk1", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk2" },
