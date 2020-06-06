@@ -20,6 +20,8 @@ for x, steam_turbine in pairs(steam_turbines) do
     turbine.vertical_animation.layers[1].filename  = "__darkstar-power__/graphics/entity/" .. steam_turbine.name .. "/steam-turbine-V.png"
     turbine.vertical_animation.layers[1].hr_version.filename  = "__darkstar-power__/graphics/entity/" .. steam_turbine.name .. "/hr-steam-turbine-V.png"
 
+    turbine.fluid_box.filter = "heavy-steam"
+
     item.name = steam_turbine.name
     item.icon = "__darkstar-power__/graphics/icons/" .. steam_turbine.name .. ".png"
     item.place_result = steam_turbine.name

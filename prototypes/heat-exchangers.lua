@@ -25,6 +25,9 @@ for x, heat_exchanger in pairs(heat_exchangers) do
     exchanger.energy_consumption = heat_exchanger.energy_con_mw .. "MW"
     exchanger.energy_source.max_temperature = heat_exchanger.max_temp
     
+    exchanger.fluid_box.filter = "heavy-water"
+    exchanger.output_fluid_box.filter = "heavy-steam"
+
     item.name = heat_exchanger.name
     item.icon = "__darkstar-power__/graphics/icons/" .. heat_exchanger.name .. ".png"
     item.place_result = heat_exchanger.name
