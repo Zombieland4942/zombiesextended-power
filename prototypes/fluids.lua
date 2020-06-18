@@ -6,7 +6,7 @@ for x, fluid in pairs(fluids) do
     fluid_entity = util.table.deepcopy(fluid_base)
 
     fluid_entity.name = fluid.name
-    fluid_entity.icon = "__darkstar-power__/graphics/icons/" .. fluid.name .. ".png"
+    fluid_entity.icon = "__zombiesextended-power__/graphics/icons/" .. fluid.name .. ".png"
 
     fluid_entity.default_temperature = fluid.default_temperature
     fluid_entity.max_temperature = fluid.max_temperature

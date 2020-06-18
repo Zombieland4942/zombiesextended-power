@@ -7,14 +7,14 @@ for x, adv_fuel_cell in pairs(adv_fuel_cells) do
     used_fuel_cell_item = util.table.deepcopy(used_cell_item_base)
 
     new_fuel_cell_item.name = adv_fuel_cell.name
-    new_fuel_cell_item.icon = "__darkstar-power__/graphics/icons/" .. adv_fuel_cell.name .. ".png"
+    new_fuel_cell_item.icon = "__zombiesextended-power__/graphics/icons/" .. adv_fuel_cell.name .. ".png"
     new_fuel_cell_item.subgroup = "ds-fuel"
     new_fuel_cell_item.order = "1-" .. adv_fuel_cell.order
     new_fuel_cell_item.fuel_value = adv_fuel_cell.fuel_value
     new_fuel_cell_item.burnt_result = "used-up-" .. adv_fuel_cell.name
 
     used_fuel_cell_item.name = "used-up-" .. adv_fuel_cell.name
-    used_fuel_cell_item.icon = "__darkstar-power__/graphics/icons/used-up-" .. adv_fuel_cell.name .. ".png"
+    used_fuel_cell_item.icon = "__zombiesextended-power__/graphics/icons/used-up-" .. adv_fuel_cell.name .. ".png"
     used_fuel_cell_item.subgroup = "ds-fuel"
     used_fuel_cell_item.order = "2-" .. adv_fuel_cell.order
     
@@ -30,7 +30,7 @@ for x, adv_fuel_cell in pairs(adv_fuel_cells) do
             enabled = false,
             category = "centrifuging",
             ingredients = { {"used-up-" .. adv_fuel_cell.name, 5} },
-            icon = "__darkstar-power__/graphics/icons/" .. adv_fuel_cell.name .. "-reprocessing.png",
+            icon = "__zombiesextended-power__/graphics/icons/" .. adv_fuel_cell.name .. "-reprocessing.png",
             icon_size = 64, icon_mipmaps = 4,
             subgroup = "ds-fuel",
             order = "a",

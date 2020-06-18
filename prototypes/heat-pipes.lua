@@ -7,13 +7,13 @@ for x, heat_pipe in pairs(heat_pipes) do
     item = util.table.deepcopy(item_base)
 
     reactor.name = heat_pipe.name
-    reactor.icon = "__darkstar-power__/graphics/icons/" .. heat_pipe.name .. ".png"    
+    reactor.icon = "__zombiesextended-power__/graphics/icons/" .. heat_pipe.name .. ".png"    
     reactor.minable.result = heat_pipe.name
     reactor.max_health = heat_pipe.health
     reactor.heat_buffer.max_temperature = heat_pipe.max_temp
     
     item.name = heat_pipe.name
-    item.icon = "__darkstar-power__/graphics/icons/" .. heat_pipe.name .. ".png"
+    item.icon = "__zombiesextended-power__/graphics/icons/" .. heat_pipe.name .. ".png"
     item.place_result = heat_pipe.name
     item.subgroup = "ds-reactors"
     item.order = heat_pipe.order

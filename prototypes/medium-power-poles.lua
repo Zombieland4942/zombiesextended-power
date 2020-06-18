@@ -9,17 +9,17 @@ for x, medium_power_pole in pairs(medium_power_poles) do
     item = util.table.deepcopy(item_base)
 
     electric_pole.name = medium_power_pole.name
-    electric_pole.icon = "__darkstar-power__/graphics/icons/" .. medium_power_pole.name .. ".png"
+    electric_pole.icon = "__zombiesextended-power__/graphics/icons/" .. medium_power_pole.name .. ".png"
     electric_pole.minable.result = medium_power_pole.name
     electric_pole.max_health = medium_power_pole.health
     electric_pole.supply_area_distance  = medium_power_pole.area
     electric_pole.maximum_wire_distance  = medium_power_pole.wire_reach
 
-    electric_pole.pictures.layers[1].filename = "__darkstar-power__/graphics/entity/" .. medium_power_pole.name .. "/medium-electric-pole.png"
-    electric_pole.pictures.layers[1].hr_version.filename = "__darkstar-power__/graphics/entity/" .. medium_power_pole.name .. "/hr-medium-electric-pole.png"
+    electric_pole.pictures.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. medium_power_pole.name .. "/medium-electric-pole.png"
+    electric_pole.pictures.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. medium_power_pole.name .. "/hr-medium-electric-pole.png"
 
     item.name = medium_power_pole.name
-    item.icon = "__darkstar-power__/graphics/icons/" .. medium_power_pole.name .. ".png"
+    item.icon = "__zombiesextended-power__/graphics/icons/" .. medium_power_pole.name .. ".png"
     item.place_result = medium_power_pole.name
     item.subgroup = "ds-power-dist"
 

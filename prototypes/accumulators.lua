@@ -8,18 +8,18 @@ for x, accumulator in pairs(accumulators) do
     item = util.table.deepcopy(item_base)
 
     entity.name = accumulator.name    
-    entity.icon = "__darkstar-power__/graphics/icons/" .. accumulator.name .. ".png"
+    entity.icon = "__zombiesextended-power__/graphics/icons/" .. accumulator.name .. ".png"
     entity.minable.result = accumulator.name
     entity.max_health = accumulator.health
     entity.energy_source.buffer_capacity  = accumulator.buffer_mj .. "MJ"
     entity.energy_source.input_flow_limit  = accumulator.flow_in_kw .. "kW"
     entity.energy_source.output_flow_limit  = accumulator.flow_out_kw .. "kW"
     
-    entity.picture.layers[1].filename = "__darkstar-power__/graphics/entity/" .. accumulator.name .. "/accumulator.png"
-    entity.picture.layers[1].hr_version.filename = "__darkstar-power__/graphics/entity/" .. accumulator.name .. "/hr-accumulator.png"
+    entity.picture.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/accumulator.png"
+    entity.picture.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/hr-accumulator.png"
 
     item.name = accumulator.name
-    item.icon = "__darkstar-power__/graphics/icons/" .. accumulator.name .. ".png"
+    item.icon = "__zombiesextended-power__/graphics/icons/" .. accumulator.name .. ".png"
     item.place_result = accumulator.name
     item.subgroup = "ds-solar"
     item.order = accumulator.order

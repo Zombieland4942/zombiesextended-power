@@ -8,16 +8,16 @@ for x, heat_exchanger in pairs(heat_exchangers) do
     item = util.table.deepcopy(item_base)
 
     exchanger.name = heat_exchanger.name
-    exchanger.icon = "__darkstar-power__/graphics/icons/" .. heat_exchanger.name .. ".png"
+    exchanger.icon = "__zombiesextended-power__/graphics/icons/" .. heat_exchanger.name .. ".png"
 
-    exchanger.structure.north.layers[1].filename = "__darkstar-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-N-idle.png"
-    exchanger.structure.north.layers[1].hr_version.filename = "__darkstar-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-N-idle.png"
-    exchanger.structure.east.layers[1].filename = "__darkstar-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-E-idle.png"
-    exchanger.structure.east.layers[1].hr_version.filename = "__darkstar-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-E-idle.png"
-    exchanger.structure.south.layers[1].filename = "__darkstar-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-S-idle.png"
-    exchanger.structure.south.layers[1].hr_version.filename = "__darkstar-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-S-idle.png"
-    exchanger.structure.west.layers[1].filename = "__darkstar-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-W-idle.png"
-    exchanger.structure.west.layers[1].hr_version.filename = "__darkstar-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-W-idle.png"
+    exchanger.structure.north.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-N-idle.png"
+    exchanger.structure.north.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-N-idle.png"
+    exchanger.structure.east.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-E-idle.png"
+    exchanger.structure.east.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-E-idle.png"
+    exchanger.structure.south.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-S-idle.png"
+    exchanger.structure.south.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-S-idle.png"
+    exchanger.structure.west.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-W-idle.png"
+    exchanger.structure.west.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-W-idle.png"
 
     exchanger.minable.result = heat_exchanger.name
     exchanger.max_health = heat_exchanger.health
@@ -29,7 +29,7 @@ for x, heat_exchanger in pairs(heat_exchangers) do
     exchanger.output_fluid_box.filter = "heavy-steam"
 
     item.name = heat_exchanger.name
-    item.icon = "__darkstar-power__/graphics/icons/" .. heat_exchanger.name .. ".png"
+    item.icon = "__zombiesextended-power__/graphics/icons/" .. heat_exchanger.name .. ".png"
     item.place_result = heat_exchanger.name
     item.subgroup = "ds-reactors"
     item.order = heat_exchanger.order

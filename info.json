@@ -1,13 +1,13 @@
 {
-    "name": "darkstar-power",
+    "name": "zombiesextended-power",
     "version": "0.0.1",
-    "title": "Darkstar Power",
+    "title": "Zombies Extended Power",
     "author": "zombieland4942",
     "contact": "",
     "homepage": "",
     "dependencies": [
         "base >= 0.18.24",
-        "darkstar-core >= 0.0.1"
+        "zombiesextended-core >= 0.0.1"
     ],
     "description": "",
     "factorio_version": "0.18"
