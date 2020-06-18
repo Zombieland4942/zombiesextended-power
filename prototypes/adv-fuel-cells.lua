@@ -45,7 +45,7 @@ for x, adv_fuel_cell in pairs(adv_fuel_cells) do
             enabled = false,
             ingredients = adv_fuel_cell.ingredients,
             result = adv_fuel_cell.name,
-            result_count = 10
+            result_count = 1
         },
     })
 end
