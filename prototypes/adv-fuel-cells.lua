@@ -48,4 +48,11 @@ for x, adv_fuel_cell in pairs(adv_fuel_cells) do
             result_count = 1
         },
     })
+    
+    table.insert(data.raw["module"]["productivity-module"].limitation, adv_fuel_cell.name)
+    table.insert(data.raw["module"]["productivity-module"].limitation, adv_fuel_cell.name .. "-reprocessing")
+    table.insert(data.raw["module"]["productivity-module-2"].limitation, adv_fuel_cell.name)
+    table.insert(data.raw["module"]["productivity-module-2"].limitation, adv_fuel_cell.name .. "-reprocessing")
+    table.insert(data.raw["module"]["productivity-module-3"].limitation, adv_fuel_cell.name)
+    table.insert(data.raw["module"]["productivity-module-3"].limitation, adv_fuel_cell.name .. "-reprocessing")
 end
