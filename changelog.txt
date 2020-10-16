@@ -2,6 +2,8 @@
 Version: 1.0.1
 Date: ????
   Changes:
+    - Added Auto_barreling into Config
+    - Removed Super Heated Steam Barrels
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2020-08-28

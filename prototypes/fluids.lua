@@ -13,6 +13,7 @@ for x, fluid in pairs(fluids) do
     fluid_entity.heat_capacity = fluid.heat_capacity
     fluid_entity.base_color = fluid.base_color
     fluid_entity.flow_color = fluid.flow_color
+    fluid_entity.auto_barrel = fluid.auto_barrel
     
     if fluid.ingredients then
         data:extend({
