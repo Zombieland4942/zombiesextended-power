@@ -17,6 +17,10 @@ for x, accumulator in pairs(accumulators) do
     
     entity.picture.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/accumulator.png"
     entity.picture.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/hr-accumulator.png"
+    entity.discharge_animation.layers[1].layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/accumulator.png"
+    entity.discharge_animation.layers[1].layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/hr-accumulator.png"
+    entity.charge_animation.layers[1].layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/accumulator.png"
+    entity.charge_animation.layers[1].layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/hr-accumulator.png"
 
     item.name = accumulator.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. accumulator.name .. ".png"
