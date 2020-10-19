@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4
-Date: ????
+Date: 2020-10-19
   Changes:
     - Fixed Issue with High Temp Heat Pipes being generally dim
     - Added Mk2 & Mk3 Heat Pipes with Indicators
