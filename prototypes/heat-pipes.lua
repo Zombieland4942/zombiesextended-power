@@ -14,6 +14,7 @@ for x, heat_pipe in pairs(heat_pipes) do
     entity.minable.result = heat_pipe.name
     entity.max_health = heat_pipe.health
     entity.heat_buffer.max_temperature = heat_pipe.max_temp
+    entity.next_upgrade = heat_pipe.next_upgrade
     
     item.name = heat_pipe.name
     item.icons = {

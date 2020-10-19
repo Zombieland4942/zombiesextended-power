@@ -13,6 +13,7 @@ for x, steam_turbine in pairs(steam_turbines) do
     turbine.max_health = steam_turbine.health
     turbine.maximum_temperature  = steam_turbine.max_temp
     turbine.fluid_usage_per_tick = steam_turbine.fluid_per_tick
+    turbine.next_upgrade = steam_turbine.next_upgrade
 
     turbine.horizontal_animation.layers[1].filename  = "__zombiesextended-power__/graphics/entity/" .. steam_turbine.name .. "/steam-turbine-H.png"
     turbine.horizontal_animation.layers[1].hr_version.filename  = "__zombiesextended-power__/graphics/entity/" .. steam_turbine.name .. "/hr-steam-turbine-H.png"

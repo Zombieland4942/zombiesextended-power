@@ -1,4 +1,3 @@
-data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "big-power-poles"
 
 local electric_pole_base = util.table.deepcopy(data.raw["electric-pole"]["big-electric-pole"])
 local item_base = util.table.deepcopy(data.raw["item"]["big-electric-pole"])
@@ -14,6 +13,7 @@ for x, large_power_pole in pairs(large_power_poles) do
     electric_pole.max_health = large_power_pole.health
     electric_pole.supply_area_distance  = large_power_pole.area
     electric_pole.maximum_wire_distance  = large_power_pole.wire_reach
+    electric_pole.next_upgrade = large_power_pole.next_upgrade
 
     electric_pole.pictures.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. large_power_pole.name .. "/big-electric-pole.png"
     electric_pole.pictures.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. large_power_pole.name .. "/hr-big-electric-pole.png"

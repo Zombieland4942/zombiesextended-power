@@ -13,7 +13,8 @@ for x, accumulator in pairs(accumulators) do
     entity.max_health = accumulator.health
     entity.energy_source.buffer_capacity  = accumulator.buffer_mj .. "MJ"
     entity.energy_source.input_flow_limit  = accumulator.flow_in_kw .. "kW"
-    entity.energy_source.output_flow_limit  = accumulator.flow_out_kw .. "kW"
+    entity.energy_source.output_flow_limit  = accumulator.flow_out_kw .. "kW"    
+    entity.next_upgrade = accumulator.next_upgrade
     
     entity.picture.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/accumulator.png"
     entity.picture.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. accumulator.name .. "/hr-accumulator.png"

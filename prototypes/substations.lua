@@ -1,4 +1,3 @@
-data.raw["electric-pole"]["substation"].fast_replaceable_group = "substations"
 
 local substation_base = util.table.deepcopy(data.raw["electric-pole"]["substation"])
 local item_base = util.table.deepcopy(data.raw["item"]["substation"])
@@ -14,6 +13,7 @@ for x, substation in pairs(substations) do
     sub.max_health = substation.health
     sub.supply_area_distance  = substation.area
     sub.maximum_wire_distance  = substation.wire_reach
+    sub.next_upgrade = substation.next_upgrade
 
     sub.pictures.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. substation.name .. "/substation.png"
     sub.pictures.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. substation.name .. "/hr-substation.png"

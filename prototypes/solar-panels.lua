@@ -12,6 +12,7 @@ for x, solar_panel in pairs(solar_panels) do
     solar.minable.result = solar_panel.name
     solar.max_health = solar_panel.health
     solar.production  = solar_panel.production_kw .. "kW"
+    solar.next_upgrade = solar_panel.next_upgrade
 
     solar.picture.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. solar_panel.name .. "/solar-panel.png"
     solar.picture.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. solar_panel.name .. "/hr-solar-panel.png"

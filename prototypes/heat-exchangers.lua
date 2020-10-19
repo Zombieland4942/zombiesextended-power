@@ -19,6 +19,8 @@ for x, heat_exchanger in pairs(heat_exchangers) do
     exchanger.structure.west.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/heatex-W-idle.png"
     exchanger.structure.west.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. heat_exchanger.name .. "/hr-heatex-W-idle.png"
 
+    exchanger.next_upgrade = heat_exchanger.next_upgrade
+
     exchanger.minable.result = heat_exchanger.name
     exchanger.max_health = heat_exchanger.health
     exchanger.target_temperature = heat_exchanger.target_temp

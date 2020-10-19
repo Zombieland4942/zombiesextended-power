@@ -15,6 +15,7 @@ for x, adv_reactor in pairs(adv_reactors) do
     reactor.consumption = adv_reactor.production_mw .. "MW"
     reactor.heat_buffer.max_temperature = adv_reactor.max_temp
     reactor.heat_buffer.specific_heat = adv_reactor.specific_heat_mj .. "MJ"
+    reactor.next_upgrade = adv_reactor.next_upgrade
 
     item.name = adv_reactor.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. adv_reactor.name .. ".png"

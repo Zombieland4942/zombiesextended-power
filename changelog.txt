@@ -2,8 +2,9 @@
 Version: 1.0.4
 Date: ????
   Changes:
-    - Fixed Issue with High Temp Heat Pipes being generally dim.
+    - Fixed Issue with High Temp Heat Pipes being generally dim
     - Added Mk2 & Mk3 Heat Pipes with Indicators
+    - Fixed issue with upgrade planner not upgrading modded items
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2020-10-17
