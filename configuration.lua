@@ -78,7 +78,9 @@ steam_turbines = {
 }
 
 heat_pipes = {
-    { order = "b-j", name = "heat-pipe-mk1", health = 350, max_temp = 4000, ingredients = { {"vibranium-plate", 1} }, technology = "nuclear-mk1" },
+    { order = "b-j", name = "heat-pipe-mk1", health = 350, max_temp = 2000, tier = "tier-1", ingredients = { {"vibranium-plate", 1} }, technology = "nuclear-mk1" },
+    { order = "b-k", name = "heat-pipe-mk2", health = 450, max_temp = 4000, tier = "tier-2", ingredients = { {"heat-pipe-mk1", 1}, {"vibranium-plate", 2} }, technology = "nuclear-mk2" },
+    { order = "b-l", name = "heat-pipe-mk3", health = 550, max_temp = 8000, tier = "tier-3", ingredients = { {"heat-pipe-mk2", 1}, {"vibranium-plate", 2} }, technology = "nuclear-mk3" },
 }
 
 adv_fuel_cells = {

@@ -1,5 +1,3 @@
-data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 4000
-
 local reator_base = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
 local item_base = util.table.deepcopy(data.raw["item"]["nuclear-reactor"])
 
