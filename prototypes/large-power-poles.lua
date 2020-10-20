@@ -18,6 +18,10 @@ for x, large_power_pole in pairs(large_power_poles) do
     electric_pole.pictures.layers[1].filename = "__zombiesextended-power__/graphics/entity/" .. large_power_pole.name .. "/big-electric-pole.png"
     electric_pole.pictures.layers[1].hr_version.filename = "__zombiesextended-power__/graphics/entity/" .. large_power_pole.name .. "/hr-big-electric-pole.png"
 
+    if mods["beautiful_bridge_railway"] then
+        electric_pole.collision_mask = { "object-layer" }
+    end
+
     item.name = large_power_pole.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. large_power_pole.name .. ".png"
     item.place_result = large_power_pole.name

@@ -8,7 +8,8 @@
     "dependencies": [
         "base >= 1.0.0",
         "zombiesextended-core >= 1.0.0",
-        "?heat_glow"
+        "? heat_glow",
+        "? beautiful_bridge_railway"
     ],
     "description": "ZombiesExtended Power adds a number of power generation methods and machines. This mod is still being tuned, please check the changelog before upgrading the mod. Ps. No Zombies are added.",
     "factorio_version": "1.0"
