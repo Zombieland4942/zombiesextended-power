@@ -103,9 +103,9 @@ heat_pipes = {
 }
 
 adv_fuel_cells = {
-    { order = "c-a", name = "adv-fuel-cell-mk1", fuel_value = "16GJ", recyle_result = {{"uranium-238", 6}}, ingredients = { {"uranium-fuel-cell", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk1" },
-    { order = "c-b", name = "adv-fuel-cell-mk2", fuel_value = "32GJ", recyle_result = {{"uranium-238", 12},{"uranium-235", 3}}, ingredients = { {"adv-fuel-cell-mk1", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk2" },
-    { order = "c-c", name = "adv-fuel-cell-mk3", fuel_value = "64GJ", recyle_result = {{"uranium-238", 24},{"uranium-235", 6}}, ingredients = { {"adv-fuel-cell-mk2", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk3" },
+    { order = "c-a", name = "adv-fuel-cell-mk1", fuel_value = "16GJ", recyle_result = {{"uranium-238", 3}}, ingredients = { {"uranium-fuel-cell", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk1" },
+    { order = "c-b", name = "adv-fuel-cell-mk2", fuel_value = "32GJ", recyle_result = {{"uranium-238", 5},{"plutonium", 1}}, ingredients = { {"adv-fuel-cell-mk1", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk2" },
+    { order = "c-c", name = "adv-fuel-cell-mk3", fuel_value = "64GJ", recyle_result = {{"uranium-238", 8},{"plutonium", 5}}, ingredients = { {"adv-fuel-cell-mk2", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk3" },
 }
 
 large_power_poles = {
