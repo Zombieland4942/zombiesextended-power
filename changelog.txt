@@ -1,7 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.9
-Date: ????
+Date: 2020-12-18
   Changes:
+    - Adjusted Heavy Water Changes
+    - Fixed up issue with Fast Replace group and the small power poles
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.8
 Date: 2020-12-18

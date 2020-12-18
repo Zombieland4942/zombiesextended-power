@@ -37,11 +37,11 @@ data.raw["generator"]["steam-turbine"].fast_replaceable_group = "steam-engine"
 data.raw["generator"]["steam-turbine"].next_upgrade = "steam-turbine-mk1"
 data.raw["heat-pipe"]["heat-pipe"].fast_replaceable_group = "heat-pipe"
 data.raw["heat-pipe"]["heat-pipe"].next_upgrade = "heat-pipe-mk1"
-data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "big-power-poles"
+data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "large-power-pole"
 data.raw["electric-pole"]["big-electric-pole"].next_upgrade = "large-power-pole-mk1"
-data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group = "medium-power-poles"
+data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group = "electric-pole"
 data.raw["electric-pole"]["medium-electric-pole"].next_upgrade = "medium-power-pole-mk1"
-data.raw["electric-pole"]["substation"].fast_replaceable_group = "substations"
+data.raw["electric-pole"]["substation"].fast_replaceable_group = "substation"
 data.raw["electric-pole"]["substation"].next_upgrade = "substation-mk1"
 
 solar_panels = {
@@ -124,6 +124,6 @@ substations = {
 }
 
 fluids = {
-    { order = "e-a", name = "heavy-water", auto_barrel = true, default_temperature = 15, max_temperature = 100, heat_capacity = "0.8KJ", base_color = {r=0, g=0.04, b=0.6}, flow_color = {r=0.7, g=0.7, b=0.7}, energy_required = 0.5, amount = 1, ingredients = { {type="fluid", name="water", amount=2} }, technology = "heavy-water-processing" },
+    { order = "e-a", name = "heavy-water", auto_barrel = true, default_temperature = 15, max_temperature = 100, heat_capacity = "0.8KJ", base_color = {r=0, g=0.04, b=0.6}, flow_color = {r=0.7, g=0.7, b=0.7}, energy_required = 0.5, ingredients = { {type="fluid", name="water", amount=100} }, amount = 50, technology = "heavy-water-processing" },
     { order = "e-b", name = "heavy-steam", auto_barrel = false, default_temperature = 15, max_temperature = 1000, heat_capacity = "0.8KJ", base_color = {r=0.20, g=0.20, b=0.20}, flow_color = {r=0.5, g=0.5, b=0.5} },
 }
