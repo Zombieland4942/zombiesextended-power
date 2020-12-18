@@ -21,12 +21,12 @@ for x, fluid in pairs(fluids) do
                 type = "recipe",
                 name = fluid.name,
                 category = "chemistry",
-                energy_required = 1,
+                energy_required = fluid.energy_required,
                 enabled = false,
                 ingredients = fluid.ingredients,
                 results=
                 {
-                    {type="fluid", name=fluid.name, amount=1}
+                    {type="fluid", name=fluid.name, amount=fluid.amount}
                 },
                 subgroup = "fluid-recipes"
             }

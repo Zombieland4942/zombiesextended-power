@@ -124,6 +124,6 @@ substations = {
 }
 
 fluids = {
-    { order = "e-a", name = "heavy-water", auto_barrel = true, default_temperature = 15, max_temperature = 100, heat_capacity = "0.8KJ", base_color = {r=0, g=0.04, b=0.6}, flow_color = {r=0.7, g=0.7, b=0.7}, ingredients = { {type="fluid", name="water", amount=10} }, technology = "heavy-water-processing" },
+    { order = "e-a", name = "heavy-water", auto_barrel = true, default_temperature = 15, max_temperature = 100, heat_capacity = "0.8KJ", base_color = {r=0, g=0.04, b=0.6}, flow_color = {r=0.7, g=0.7, b=0.7}, energy_required = 0.5, amount = 1, ingredients = { {type="fluid", name="water", amount=2} }, technology = "heavy-water-processing" },
     { order = "e-b", name = "heavy-steam", auto_barrel = false, default_temperature = 15, max_temperature = 1000, heat_capacity = "0.8KJ", base_color = {r=0.20, g=0.20, b=0.20}, flow_color = {r=0.5, g=0.5, b=0.5} },
 }
