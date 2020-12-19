@@ -4,7 +4,7 @@ local used_cell_item_base = util.table.deepcopy(data.raw["item"]["used-up-uraniu
 local subgroup = "intermediate-product"
 
 if settings.startup["zombies-use-seperate-tab"].value == true then        
-    used_fuel_cell_item.subgroup = "ds-fuel"
+    subgroup = "ds-fuel"
 end  
 
 for x, adv_fuel_cell in pairs(adv_fuel_cells) do
