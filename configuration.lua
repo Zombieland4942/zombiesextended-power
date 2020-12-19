@@ -45,19 +45,19 @@ data.raw["electric-pole"]["substation"].fast_replaceable_group = "substation"
 data.raw["electric-pole"]["substation"].next_upgrade = "substation-mk1"
 
 solar_panels = {
-    { order = "a-a", name = "solar-panel-mk1", health = 200, production_kw = 480, next_upgrade = "solar-panel-mk2", ingredients = { {"solar-panel", 9},{"complex-processing-unit", 4} }, technology = "solar-mk1" },
-    { order = "a-b", name = "solar-panel-mk2", health = 200, production_kw = 3840, next_upgrade = "solar-panel-mk3", ingredients = { {"solar-panel-mk1", 9},{"complex-processing-unit", 4} }, technology = "solar-mk2" },
-    { order = "a-c", name = "solar-panel-mk3", health = 200, production_kw = 30720, next_upgrade = "solar-panel-mk4", ingredients = { {"solar-panel-mk2", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk3" },
-    { order = "a-d", name = "solar-panel-mk4", health = 200, production_kw = 245760, next_upgrade = "solar-panel-mk5", ingredients = { {"solar-panel-mk3", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk4" },
-    { order = "a-e", name = "solar-panel-mk5", health = 200, production_kw = 1966080, next_upgrade = "", ingredients = { {"solar-panel-mk4", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk5" },
+    { order = "a", name = "solar-panel-mk1", health = 200, production_kw = 480, next_upgrade = "solar-panel-mk2", ingredients = { {"solar-panel", 9},{"complex-processing-unit", 4} }, technology = "solar-mk1" },
+    { order = "b", name = "solar-panel-mk2", health = 200, production_kw = 3840, next_upgrade = "solar-panel-mk3", ingredients = { {"solar-panel-mk1", 9},{"complex-processing-unit", 4} }, technology = "solar-mk2" },
+    { order = "c", name = "solar-panel-mk3", health = 200, production_kw = 30720, next_upgrade = "solar-panel-mk4", ingredients = { {"solar-panel-mk2", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk3" },
+    { order = "d", name = "solar-panel-mk4", health = 200, production_kw = 245760, next_upgrade = "solar-panel-mk5", ingredients = { {"solar-panel-mk3", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk4" },
+    { order = "e", name = "solar-panel-mk5", health = 200, production_kw = 1966080, next_upgrade = "", ingredients = { {"solar-panel-mk4", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk5" },
 }
 
 accumulators = {
-    { order = "a-f", name = "accumulator-mk1", health = 150, buffer_mj = 40, flow_in_kw = 2400, flow_out_kw = 2400, next_upgrade = "accumulator-mk2", ingredients = { {"accumulator", 9},{"complex-processing-unit", 4} }, technology = "solar-mk1" },
-    { order = "a-g", name = "accumulator-mk2", health = 150, buffer_mj = 320, flow_in_kw = 19200, flow_out_kw = 19200, next_upgrade = "accumulator-mk3", ingredients = { {"accumulator-mk1", 9},{"complex-processing-unit", 4} }, technology = "solar-mk2" },
-    { order = "a-h", name = "accumulator-mk3", health = 150, buffer_mj = 2560, flow_in_kw = 153600, flow_out_kw = 153600, next_upgrade = "accumulator-mk4", ingredients = { {"accumulator-mk2", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk3" },
-    { order = "a-i", name = "accumulator-mk4", health = 150, buffer_mj = 20480, flow_in_kw = 1228800, flow_out_kw = 1228800, next_upgrade = "accumulator-mk5", ingredients = { {"accumulator-mk3", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk4" },
-    { order = "a-j", name = "accumulator-mk5", health = 150, buffer_mj = 163840, flow_in_kw = 9830400, flow_out_kw = 9830400, next_upgrade = "", ingredients = { {"accumulator-mk4", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk5" },
+    { order = "a", name = "accumulator-mk1", health = 150, buffer_mj = 40, flow_in_kw = 2400, flow_out_kw = 2400, next_upgrade = "accumulator-mk2", ingredients = { {"accumulator", 9},{"complex-processing-unit", 4} }, technology = "solar-mk1" },
+    { order = "b", name = "accumulator-mk2", health = 150, buffer_mj = 320, flow_in_kw = 19200, flow_out_kw = 19200, next_upgrade = "accumulator-mk3", ingredients = { {"accumulator-mk1", 9},{"complex-processing-unit", 4} }, technology = "solar-mk2" },
+    { order = "c", name = "accumulator-mk3", health = 150, buffer_mj = 2560, flow_in_kw = 153600, flow_out_kw = 153600, next_upgrade = "accumulator-mk4", ingredients = { {"accumulator-mk2", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk3" },
+    { order = "d", name = "accumulator-mk4", health = 150, buffer_mj = 20480, flow_in_kw = 1228800, flow_out_kw = 1228800, next_upgrade = "accumulator-mk5", ingredients = { {"accumulator-mk3", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk4" },
+    { order = "e", name = "accumulator-mk5", health = 150, buffer_mj = 163840, flow_in_kw = 9830400, flow_out_kw = 9830400, next_upgrade = "", ingredients = { {"accumulator-mk4", 9},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "solar-mk5" },
 }
 
 -- RTG's Not added for the moment
@@ -79,51 +79,51 @@ geothermal_generators = {
 }
 
 adv_reactors = {
-    { order = "b-a", name = "adv-reactor-mk1", health = 500, production_mw = 80, max_temp = 2000, specific_heat_mj = 20, next_upgrade = "adv-reactor-mk2", ingredients = { {"nuclear-reactor", 3},{"complex-processing-unit", 2} }, technology = "nuclear-mk1" },
-    { order = "b-b", name = "adv-reactor-mk2", health = 500, production_mw = 160, max_temp = 4000, specific_heat_mj = 40, next_upgrade = "adv-reactor-mk3", ingredients = { {"adv-reactor-mk1", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk2" },
-    { order = "b-c", name = "adv-reactor-mk3", health = 500, production_mw = 320, max_temp = 8000, specific_heat_mj = 80, next_upgrade = "", ingredients = { {"adv-reactor-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3" }
+    { order = "a", name = "adv-reactor-mk1", health = 500, production_mw = 80, max_temp = 2000, specific_heat_mj = 20, next_upgrade = "adv-reactor-mk2", ingredients = { {"nuclear-reactor", 3},{"complex-processing-unit", 2} }, technology = "nuclear-mk1" },
+    { order = "b", name = "adv-reactor-mk2", health = 500, production_mw = 160, max_temp = 4000, specific_heat_mj = 40, next_upgrade = "adv-reactor-mk3", ingredients = { {"adv-reactor-mk1", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk2" },
+    { order = "c", name = "adv-reactor-mk3", health = 500, production_mw = 320, max_temp = 8000, specific_heat_mj = 80, next_upgrade = "", ingredients = { {"adv-reactor-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3" }
 }
 
 heat_exchangers = {
-    { order = "b-d", name = "heat-exchanger-mk1", health = 250, target_temp = 500, energy_con_mw = 20, max_temp = 1000, next_upgrade = "heat-exchanger-mk2", ingredients = { {"heat-exchanger", 3},{"complex-processing-unit", 2} }, technology = "nuclear-mk1"  },
-    { order = "b-e", name = "heat-exchanger-mk2", health = 250, target_temp = 500, energy_con_mw = 40, max_temp = 1000, next_upgrade = "heat-exchanger-mk3", ingredients = { {"heat-exchanger-mk1", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk2"  },
-    { order = "b-f", name = "heat-exchanger-mk3", health = 250, target_temp = 500, energy_con_mw = 80, max_temp = 1000, next_upgrade = "", ingredients = { {"heat-exchanger-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3"  }
+    { order = "a", name = "heat-exchanger-mk1", health = 250, target_temp = 500, energy_con_mw = 20, max_temp = 1000, next_upgrade = "heat-exchanger-mk2", ingredients = { {"heat-exchanger", 3},{"complex-processing-unit", 2} }, technology = "nuclear-mk1"  },
+    { order = "b", name = "heat-exchanger-mk2", health = 250, target_temp = 500, energy_con_mw = 40, max_temp = 1000, next_upgrade = "heat-exchanger-mk3", ingredients = { {"heat-exchanger-mk1", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk2"  },
+    { order = "c", name = "heat-exchanger-mk3", health = 250, target_temp = 500, energy_con_mw = 80, max_temp = 1000, next_upgrade = "", ingredients = { {"heat-exchanger-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3"  }
 }
 
 steam_turbines = {
-    { order = "b-g", name = "steam-turbine-mk1", health = 350, max_temp = 500, fluid_per_tick = 0.5, next_upgrade = "steam-turbine-mk2", ingredients = { {"steam-turbine", 3},{"complex-processing-unit", 2} }, technology = "nuclear-mk1" },
-    { order = "b-h", name = "steam-turbine-mk2", health = 400, max_temp = 500, fluid_per_tick = 1, next_upgrade = "steam-turbine-mk3", ingredients = { {"steam-turbine-mk1", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk2" },
-    { order = "b-i", name = "steam-turbine-mk3", health = 450, max_temp = 500, fluid_per_tick = 2, next_upgrade = "", ingredients = { {"steam-turbine-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3" }
+    { order = "a", name = "steam-turbine-mk1", health = 350, max_temp = 500, fluid_per_tick = 0.5, next_upgrade = "steam-turbine-mk2", ingredients = { {"steam-turbine", 3},{"complex-processing-unit", 2} }, technology = "nuclear-mk1" },
+    { order = "b", name = "steam-turbine-mk2", health = 400, max_temp = 500, fluid_per_tick = 1, next_upgrade = "steam-turbine-mk3", ingredients = { {"steam-turbine-mk1", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk2" },
+    { order = "c", name = "steam-turbine-mk3", health = 450, max_temp = 500, fluid_per_tick = 2, next_upgrade = "", ingredients = { {"steam-turbine-mk2", 3},{"complex-processing-unit", 5},{"vibranium-plate", 2} }, technology = "nuclear-mk3" }
 }
 
 heat_pipes = {
-    { order = "b-j", name = "heat-pipe-mk1", health = 350, max_temp = 2000, tier = "tier-1", next_upgrade = "heat-pipe-mk2", ingredients = { {"vibranium-plate", 1} }, technology = "nuclear-mk1" },
-    { order = "b-k", name = "heat-pipe-mk2", health = 450, max_temp = 4000, tier = "tier-2", next_upgrade = "heat-pipe-mk3", ingredients = { {"heat-pipe-mk1", 1}, {"vibranium-plate", 2} }, technology = "nuclear-mk2" },
-    { order = "b-l", name = "heat-pipe-mk3", health = 550, max_temp = 8000, tier = "tier-3", next_upgrade = "", ingredients = { {"heat-pipe-mk2", 1}, {"vibranium-plate", 2} }, technology = "nuclear-mk3" },
+    { order = "a", name = "heat-pipe-mk1", health = 350, max_temp = 2000, tier = "tier-1", next_upgrade = "heat-pipe-mk2", ingredients = { {"vibranium-plate", 1} }, technology = "nuclear-mk1" },
+    { order = "b", name = "heat-pipe-mk2", health = 450, max_temp = 4000, tier = "tier-2", next_upgrade = "heat-pipe-mk3", ingredients = { {"heat-pipe-mk1", 1}, {"vibranium-plate", 2} }, technology = "nuclear-mk2" },
+    { order = "c", name = "heat-pipe-mk3", health = 550, max_temp = 8000, tier = "tier-3", next_upgrade = "", ingredients = { {"heat-pipe-mk2", 1}, {"vibranium-plate", 2} }, technology = "nuclear-mk3" },
 }
 
 adv_fuel_cells = {
-    { order = "c-a", name = "adv-fuel-cell-mk1", fuel_value = "16GJ", recyle_result = {{"uranium-238", 3}}, ingredients = { {"uranium-fuel-cell", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk1" },
-    { order = "c-b", name = "adv-fuel-cell-mk2", fuel_value = "32GJ", recyle_result = {{"uranium-238", 5},{"plutonium", 1}}, ingredients = { {"adv-fuel-cell-mk1", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk2" },
-    { order = "c-c", name = "adv-fuel-cell-mk3", fuel_value = "64GJ", recyle_result = {{"uranium-238", 8},{"plutonium", 5}}, ingredients = { {"adv-fuel-cell-mk2", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk3" },
+    { order = "a", name = "adv-fuel-cell-mk1", fuel_value = "16GJ", recyle_result = {{"uranium-238", 3}}, ingredients = { {"uranium-fuel-cell", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk1" },
+    { order = "b", name = "adv-fuel-cell-mk2", fuel_value = "32GJ", recyle_result = {{"uranium-238", 5},{"plutonium", 1}}, ingredients = { {"adv-fuel-cell-mk1", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk2" },
+    { order = "c", name = "adv-fuel-cell-mk3", fuel_value = "64GJ", recyle_result = {{"uranium-238", 8},{"plutonium", 5}}, ingredients = { {"adv-fuel-cell-mk2", 2},{"vibranium-plate", 1} }, technology = "nuclear-mk3" },
 }
 
 large_power_poles = {
-    { order = "d-a", name = "large-power-pole-mk1", health = 150, wire_reach = 45, area = 2, next_upgrade = "large-power-pole-mk2", ingredients = { {"big-electric-pole", 2},{"gold-plate", 1} }, technology = "electric-energy-distribution-3" },
-    { order = "d-b", name = "large-power-pole-mk2", health = 150, wire_reach = 64, area = 2, next_upgrade = "", ingredients = { {"large-power-pole-mk1", 2},{"vibranium-plate", 2} }, technology = "electric-energy-distribution-4" },
+    { order = "a", name = "large-power-pole-mk1", health = 150, wire_reach = 45, area = 2, next_upgrade = "large-power-pole-mk2", ingredients = { {"big-electric-pole", 2},{"gold-plate", 1} }, technology = "electric-energy-distribution-3" },
+    { order = "b", name = "large-power-pole-mk2", health = 150, wire_reach = 64, area = 2, next_upgrade = "", ingredients = { {"large-power-pole-mk1", 2},{"vibranium-plate", 2} }, technology = "electric-energy-distribution-4" },
 }
 
 medium_power_poles = {
-    { order = "d-c", name = "medium-power-pole-mk1", health = 100, wire_reach = 18, area = 7, next_upgrade = "medium-power-pole-mk2", ingredients = { {"medium-electric-pole", 2},{"gold-plate", 1} }, technology = "electric-energy-distribution-3" },
-    { order = "d-d", name = "medium-power-pole-mk2", health = 100, wire_reach = 36, area = 14, next_upgrade = "", ingredients = { {"medium-power-pole-mk1", 2},{"vibranium-plate", 2} }, technology = "electric-energy-distribution-4" },
+    { order = "a", name = "medium-power-pole-mk1", health = 100, wire_reach = 18, area = 7, next_upgrade = "medium-power-pole-mk2", ingredients = { {"medium-electric-pole", 2},{"gold-plate", 1} }, technology = "electric-energy-distribution-3" },
+    { order = "b", name = "medium-power-pole-mk2", health = 100, wire_reach = 36, area = 14, next_upgrade = "", ingredients = { {"medium-power-pole-mk1", 2},{"vibranium-plate", 2} }, technology = "electric-energy-distribution-4" },
 }
  
 substations = {
-    { order = "d-e", name = "substation-mk1", health = 250, wire_reach = 34, area = 18, next_upgrade = "substation-mk2", ingredients = { {"substation", 2},{"gold-plate", 1} }, technology = "electric-energy-distribution-3" },
-    { order = "d-f", name = "substation-mk2", health = 250, wire_reach = 64, area = 32, next_upgrade = "", ingredients = { {"substation-mk1", 2},{"vibranium-plate", 2} }, technology = "electric-energy-distribution-4" },
+    { order = "a", name = "substation-mk1", health = 250, wire_reach = 34, area = 18, next_upgrade = "substation-mk2", ingredients = { {"substation", 2},{"gold-plate", 1} }, technology = "electric-energy-distribution-3" },
+    { order = "b", name = "substation-mk2", health = 250, wire_reach = 64, area = 32, next_upgrade = "", ingredients = { {"substation-mk1", 2},{"vibranium-plate", 2} }, technology = "electric-energy-distribution-4" },
 }
 
 fluids = {
-    { order = "e-a", name = "heavy-water", auto_barrel = true, default_temperature = 15, max_temperature = 100, heat_capacity = "0.8KJ", base_color = {r=0, g=0.04, b=0.6}, flow_color = {r=0.7, g=0.7, b=0.7}, energy_required = 0.5, ingredients = { {type="fluid", name="water", amount=100} }, amount = 50, technology = "heavy-water-processing" },
-    { order = "e-b", name = "heavy-steam", auto_barrel = false, default_temperature = 15, max_temperature = 1000, heat_capacity = "0.8KJ", base_color = {r=0.20, g=0.20, b=0.20}, flow_color = {r=0.5, g=0.5, b=0.5} },
+    { order = "a", name = "heavy-water", auto_barrel = true, default_temperature = 15, max_temperature = 100, heat_capacity = "0.8KJ", base_color = {r=0, g=0.04, b=0.6}, flow_color = {r=0.7, g=0.7, b=0.7}, energy_required = 0.5, ingredients = { {type="fluid", name="water", amount=100} }, amount = 50, technology = "heavy-water-processing" },
+    { order = "b", name = "heavy-steam", auto_barrel = false, default_temperature = 15, max_temperature = 1000, heat_capacity = "0.8KJ", base_color = {r=0.20, g=0.20, b=0.20}, flow_color = {r=0.5, g=0.5, b=0.5} },
 }

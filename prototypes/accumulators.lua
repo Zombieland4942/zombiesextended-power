@@ -26,8 +26,11 @@ for x, accumulator in pairs(accumulators) do
     item.name = accumulator.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. accumulator.name .. ".png"
     item.place_result = accumulator.name
-    item.subgroup = "ds-solar"
-    item.order = accumulator.order
+    item.order = item.order .. accumulator.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-solar"
+    end    
     
     table.insert(data.raw["technology"][accumulator.technology].effects, { type = "unlock-recipe", recipe = accumulator.name })
 

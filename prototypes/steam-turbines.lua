@@ -26,8 +26,11 @@ for x, steam_turbine in pairs(steam_turbines) do
     item.name = steam_turbine.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. steam_turbine.name .. ".png"
     item.place_result = steam_turbine.name
-    item.subgroup = "ds-reactors"
-    item.order = steam_turbine.order
+    item.order = item.order .. steam_turbine.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-reactors"
+    end  
     
     table.insert(data.raw["technology"][steam_turbine.technology].effects, { type = "unlock-recipe", recipe = steam_turbine.name })
 

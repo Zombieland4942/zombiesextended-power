@@ -25,7 +25,11 @@ for x, large_power_pole in pairs(large_power_poles) do
     item.name = large_power_pole.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. large_power_pole.name .. ".png"
     item.place_result = large_power_pole.name
-    item.subgroup = "ds-power-dist"
+    item.order = item.order .. large_power_pole.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-power-dist"
+    end    
 
     table.insert(data.raw["technology"][large_power_pole.technology].effects, { type = "unlock-recipe", recipe = large_power_pole.name })
 

@@ -33,8 +33,11 @@ for x, heat_exchanger in pairs(heat_exchangers) do
     item.name = heat_exchanger.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. heat_exchanger.name .. ".png"
     item.place_result = heat_exchanger.name
-    item.subgroup = "ds-reactors"
-    item.order = heat_exchanger.order
+    item.order = item.order .. heat_exchanger.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-reactors"
+    end  
     
     table.insert(data.raw["technology"][heat_exchanger.technology].effects, { type = "unlock-recipe", recipe = heat_exchanger.name })
 

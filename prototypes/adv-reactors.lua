@@ -20,8 +20,11 @@ for x, adv_reactor in pairs(adv_reactors) do
     item.name = adv_reactor.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. adv_reactor.name .. ".png"
     item.place_result = adv_reactor.name
-    item.subgroup = "ds-reactors"
-    item.order = adv_reactor.order
+    item.order = item.order .. adv_reactor.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-reactors"
+    end  
     
     table.insert(data.raw["technology"][adv_reactor.technology].effects, { type = "unlock-recipe", recipe = adv_reactor.name })
 

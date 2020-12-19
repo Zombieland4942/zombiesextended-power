@@ -20,8 +20,11 @@ for x, solar_panel in pairs(solar_panels) do
     item.name = solar_panel.name
     item.icon = "__zombiesextended-power__/graphics/icons/" .. solar_panel.name .. ".png"
     item.place_result = solar_panel.name
-    item.subgroup = "ds-solar"
-    item.order = solar_panel.order
+    item.order = item.order .. solar_panel.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-solar"
+    end    
     
     table.insert(data.raw["technology"][solar_panel.technology].effects, { type = "unlock-recipe", recipe = solar_panel.name })
 

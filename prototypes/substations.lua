@@ -21,7 +21,11 @@ for x, substation in pairs(substations) do
     item.name = substation.name    
     item.icon = "__zombiesextended-power__/graphics/icons/" .. substation.name .. ".png"
     item.place_result = substation.name
-    item.subgroup = "ds-power-dist"
+    item.order = item.order .. substation.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-power-dist"
+    end    
 
     table.insert(data.raw["technology"][substation.technology].effects, { type = "unlock-recipe", recipe = substation.name })
 

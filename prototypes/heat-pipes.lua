@@ -22,8 +22,11 @@ for x, heat_pipe in pairs(heat_pipes) do
             { icon = "__zombiesextended-power__/graphics/icons/" .. heat_pipe.tier .. ".png", icon_size = 64 }
     }
     item.place_result = heat_pipe.name
-    item.subgroup = "ds-reactors"
-    item.order = heat_pipe.order
+    item.order = item.order .. heat_pipe.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-reactors"
+    end  
     
     table.insert(data.raw["technology"][heat_pipe.technology].effects, { type = "unlock-recipe", recipe = heat_pipe.name })
 
