@@ -48,7 +48,7 @@ for x, adv_fuel_cell in pairs(adv_fuel_cells) do
         {
             type = "recipe",
             name = adv_fuel_cell.name,
-            energy_required = 10,
+            energy_required = adv_fuel_cell.craft_time,
             enabled = false,
             ingredients = adv_fuel_cell.ingredients,
             result = adv_fuel_cell.name,

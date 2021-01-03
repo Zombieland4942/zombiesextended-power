@@ -35,6 +35,7 @@ for x, heat_pipe in pairs(heat_pipes) do
             type = "recipe",
             name = heat_pipe.name,
             enabled = false,
+            energy_required = heat_pipe.craft_time,
             ingredients = heat_pipe.ingredients,
             result = heat_pipe.name
         }

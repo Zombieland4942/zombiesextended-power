@@ -46,6 +46,7 @@ for x, heat_exchanger in pairs(heat_exchangers) do
             type = "recipe",
             name = heat_exchanger.name,
             enabled = false,
+            energy_required = heat_exchanger.craft_time,
             ingredients = heat_exchanger.ingredients,
             result = heat_exchanger.name
         }

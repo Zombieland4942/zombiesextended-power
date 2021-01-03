@@ -38,6 +38,7 @@ for x, large_power_pole in pairs(large_power_poles) do
             type = "recipe",
             name = large_power_pole.name,
             enabled = false,
+            energy_required = large_power_pole.craft_time,
             ingredients = large_power_pole.ingredients,
             result = large_power_pole.name
         }

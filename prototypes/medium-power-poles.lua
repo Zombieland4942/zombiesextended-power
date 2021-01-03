@@ -34,6 +34,7 @@ for x, medium_power_pole in pairs(medium_power_poles) do
             type = "recipe",
             name = medium_power_pole.name,
             enabled = false,
+            energy_required = medium_power_pole.craft_time,
             ingredients = medium_power_pole.ingredients,
             result = medium_power_pole.name
         }

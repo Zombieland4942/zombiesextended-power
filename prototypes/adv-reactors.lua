@@ -33,6 +33,7 @@ for x, adv_reactor in pairs(adv_reactors) do
             type = "recipe",
             name = adv_reactor.name,
             enabled = false,
+            energy_required = adv_reactor.craft_time,
             ingredients = adv_reactor.ingredients,
             result = adv_reactor.name
         }

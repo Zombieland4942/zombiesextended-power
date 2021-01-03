@@ -33,6 +33,7 @@ for x, solar_panel in pairs(solar_panels) do
         type = "recipe",
         name = solar_panel.name,
         enabled = false,
+        energy_required = solar_panel.energy_required,
         ingredients = solar_panel.ingredients,
         result = solar_panel.name
     }

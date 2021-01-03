@@ -39,6 +39,7 @@ for x, steam_turbine in pairs(steam_turbines) do
             type = "recipe",
             name = steam_turbine.name,
             enabled = false,
+            energy_required = steam_turbine.craft_time,
             ingredients = steam_turbine.ingredients,
             result = steam_turbine.name
         }

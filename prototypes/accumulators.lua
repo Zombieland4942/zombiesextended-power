@@ -38,7 +38,8 @@ for x, accumulator in pairs(accumulators) do
     {
         type = "recipe",
         name = accumulator.name,
-        enabled = false,
+        enabled = false,        
+        energy_required = accumulator.energy_required,
         ingredients = accumulator.ingredients,
         result = accumulator.name
     }

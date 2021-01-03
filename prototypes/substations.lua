@@ -34,6 +34,7 @@ for x, substation in pairs(substations) do
             type = "recipe",
             name = substation.name,
             enabled = false,
+            energy_required = substation.craft_time,
             ingredients = substation.ingredients,
             result = substation.name
         }
